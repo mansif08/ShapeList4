@@ -37,7 +37,7 @@ public class MainActivity2 extends AppCompatActivity implements  ShapeAdapter.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
 
         initSearchWidgets();
         initWidgets();
@@ -91,9 +91,12 @@ public class MainActivity2 extends AppCompatActivity implements  ShapeAdapter.On
     @Override
     public void onItemClick(int position)
     {
+        /*
         Intent detailIntent=new Intent(this,DetailActivity.class);
         detailIntent.putExtra("position",position);
         startActivity(detailIntent);
+
+         */
     }
 
 
@@ -226,6 +229,7 @@ public class MainActivity2 extends AppCompatActivity implements  ShapeAdapter.On
     //all buttons
     public void allFilterTapped(View view)
     {
+      
         selectedFilters.clear();
         selectedFilters.add("all");
 

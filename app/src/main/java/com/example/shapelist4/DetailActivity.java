@@ -29,7 +29,7 @@ public class DetailActivity extends AppCompatActivity {
     {
         Intent prevIntent = getIntent();
         int position = prevIntent.getIntExtra("position",0);
-        selectedRecycling = MainActivity.shapeList.get(position);
+        selectedRecycling = MainActivity2.shapeList.get(position);
         recycleImage.setImageResource(selectedRecycling.getImage());
         recycleText.setText(selectedRecycling.getName());
     }
