@@ -229,7 +229,8 @@ public class MainActivity2 extends AppCompatActivity implements  ShapeAdapter.On
     //all buttons
     public void allFilterTapped(View view)
     {
-      
+        searchView.setQuery("",false);
+         searchView.clearFocus();
         selectedFilters.clear();
         selectedFilters.add("all");
 
